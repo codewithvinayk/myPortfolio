@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-primary text-white py-5">
+      <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-3">Welcome to My Portfolio</h2>
+        <p class="lead mb-4">
+          I'm a passionate developer creating innovative solutions.
+        </p>
+        <a href="#portfolio" class="btn btn-light btn-lg text-primary"
+          >View My Work</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-4">About Me</h2>
+        <p class="lead mx-auto" style="max-width: 600px">
+          I'm a web developer with a passion for building user-friendly and
+          responsive websites. I specialize in JavaScript, HTML, and CSS, and I
+          love tackling challenging projects that push my skills to the next
+          level.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-light py-5">
+      <div class="container">
+        <h2 class="display-5 fw-bold text-center mb-4">My Projects</h2>
+        <div
+          id="project-list"
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-4">Get in Touch</h2>
+        <p class="lead mb-3">
+          Feel free to reach out for collaboration or inquiries!
+        </p>
+        <p class="lead">
+          <a href="mailto:kaushikvinay.2001@gmail.com"
+            >kaushikvinay.2001@gmail.com</a
+          >
+        </p>
+        <p class="lead">
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/vinay-kaushik-1607vk/"
+            target="_blank"
+            >https://www.linkedin.com/in/vinay-kaushik-1607vk/</a
+          >
+        </p>
+        <p class="lead">
+          GitHub:
+          <a href="https://github.com/codewithvinayk" target="_blank"
+            >https://github.com/codewithvinayk</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+      <p class="mb-0">© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Array of project objects
+      const projects = [
+        {
+          title: "TextUtils",
+          description:
+            "Developed TextUtils, a React-based web app for real-time text manipulation and analysis, enhancing user productivity.",
+          link: "https://github.com/codewithvinayk/TextUtils",
+          liveLink: "https://codewithvinayk.github.io/TextUtils/",
+        },
+        {
+          title: "iNotebook",
+          description:
+            "Built iNotebook, a secure and responsive React app for managing personal notes with CRUD operations using context API and backend integration.",
+          link: "https://github.com/codewithvinayk/iNotebook",
+        },
+        {
+          title: "NewsMonkey",
+          description:
+            "Created NewsMonkey, a dynamic React app that fetches and displays real-time news using News API with infinite scroll and category filtering.",
+          link: "https://github.com/codewithvinayk/NewsMonkey",
+        },
+        {
+          title: "Portfolio",
+          description:
+            "Designed and developed a personal portfolio website using React to showcase projects, skills, and experience with a modern UI and responsive design.",
+          link: "https://github.com/codewithvinayk/Portfolio",
+          liveLink: "https://codewithvinayk.github.io/Portfolio/",
+        },
+      ];
+
+      // Function to dynamically add projects to the portfolio section
+      function displayProjects() {
+        const projectList = document.getElementById("project-list");
+        projects.forEach((project) => {
+          const projectCard = document.createElement("div");
+          projectCard.className = "col";
+          projectCard.innerHTML = `
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title fs-5 fw-semibold mb-2">${project.title}</h3>
+      <p class="card-text text-muted">${project.description}</p>
+      <div class="d-flex gap-3">
+      <a href="${
+        project.link
+      }" target="_blank" class="text-primary fw-semibold text-decoration-none">View Project</a>
+      ${
+        project.liveLink
+          ? `<a href="${project.liveLink}" target="_blank" class="text-primary fw-semibold text-decoration-none">Live Project</a>`
+          : ""
+      }
+      </div>
+    </div>
+  </div>
+  `;
+          projectList.appendChild(projectCard);
+        });
+      }
+
+      // Call the function to display projects on page load
+      displayProjects();
+    </script>
+  </body>
+</html>
